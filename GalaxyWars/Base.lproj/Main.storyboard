@@ -60,7 +60,7 @@
                                 </constraints>
                                 <state key="normal" image="missle"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Wd-FwX" userLabel="launchMissileButton">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Wd-FwX" userLabel="launchMissileButton">
                                 <rect key="frame" x="130" y="483" width="102" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="102" id="qD8-WW-C3k"/>
@@ -68,7 +68,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="launchmisslev2"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Missile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-23-V9o" userLabel="missileInventoryLabel">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Missile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-23-V9o" userLabel="missileInventoryLabel">
                                 <rect key="frame" x="125" y="539" width="134" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="TF7-Jm-exa"/>
