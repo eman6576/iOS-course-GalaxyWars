@@ -9,7 +9,7 @@
 import Foundation
 
 class Enemy: Character {
-    private var _immuneMax = 15
+    private var _immuneMax = 0
     
     var immuneMax: Int {
         get {
@@ -19,6 +19,11 @@ class Enemy: Character {
     
     var type: String {
         return "Grunt"
+    }
+    
+    convenience init(immuneMax: Int, startingHP: Int, startingAttackPower: Int) {
+        self.init(startingHP: startingHP, startingAttackPower: startingAttackPower)
+        self._immuneMax = immuneMax
     }
     
     override func attemptAttack(attackPower: Int) -> Bool {
