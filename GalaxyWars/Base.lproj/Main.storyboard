@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="width" constant="145" id="WzV-ri-ajk"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gargoyle" translatesAutoresizingMaskIntoConstraints="NO" id="QrI-zD-9et">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gargoyle" translatesAutoresizingMaskIntoConstraints="NO" id="QrI-zD-9et">
                                 <rect key="frame" x="430" y="142" width="150" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="ADw-UU-LuI"/>
@@ -60,6 +60,13 @@
                                 </constraints>
                                 <state key="normal" image="missle"/>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="alien" translatesAutoresizingMaskIntoConstraints="NO" id="fCD-E6-NTZ">
+                                <rect key="frame" x="455" y="125" width="100" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="LeS-sf-OUm"/>
+                                    <constraint firstAttribute="width" constant="100" id="mz7-s8-oRy"/>
+                                </constraints>
+                            </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-Wd-FwX" userLabel="launchMissileButton">
                                 <rect key="frame" x="130" y="483" width="102" height="76"/>
                                 <constraints>
@@ -78,7 +85,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100 HP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvZ-mY-yOs" userLabel="enemyHP">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvZ-mY-yOs" userLabel="enemyHP">
                                 <rect key="frame" x="465" y="270" width="81" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="QFW-dU-0me"/>
@@ -101,11 +108,13 @@
                             <constraint firstItem="QrI-zD-9et" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GVX-S9-MHz"/>
                             <constraint firstItem="4Uy-5g-apk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KTH-fU-KBX"/>
                             <constraint firstItem="5OL-eQ-xRJ" firstAttribute="top" secondItem="K8D-aI-3Jg" secondAttribute="bottom" constant="115" id="Kb3-oF-vzm"/>
+                            <constraint firstItem="5OL-eQ-xRJ" firstAttribute="top" secondItem="fCD-E6-NTZ" secondAttribute="bottom" constant="75" id="LNp-Zu-QId"/>
                             <constraint firstAttribute="trailing" secondItem="4Uy-5g-apk" secondAttribute="trailing" id="U3M-s4-LTN"/>
                             <constraint firstItem="OlJ-de-wf5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="VYd-Ce-WCF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Uy-5g-apk" secondAttribute="bottom" id="fsn-rk-d1a"/>
                             <constraint firstItem="5OL-eQ-xRJ" firstAttribute="top" secondItem="lcY-Z9-CFv" secondAttribute="bottom" constant="129" id="iOt-5m-Eri"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5OL-eQ-xRJ" secondAttribute="bottom" id="mzP-ZY-fX5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fCD-E6-NTZ" secondAttribute="trailing" constant="25" id="qzZ-5C-O7O"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lcY-Z9-CFv" secondAttribute="trailing" constant="56" id="ryb-DP-58a"/>
                             <constraint firstItem="4Uy-5g-apk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rzh-kL-Jah"/>
                             <constraint firstItem="Q51-23-V9o" firstAttribute="leading" secondItem="OlJ-de-wf5" secondAttribute="trailing" constant="3" id="vvU-df-LjO"/>
@@ -119,6 +128,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="alien" width="32" height="32"/>
         <image name="attackbutton" width="145" height="154"/>
         <image name="galaxybackground" width="1667" height="1667"/>
         <image name="gargoyle" width="67" height="68"/>
