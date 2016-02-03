@@ -52,6 +52,9 @@
                                     <constraint firstAttribute="height" constant="100" id="QNg-RI-qmA"/>
                                 </constraints>
                                 <state key="normal" image="attackbutton"/>
+                                <connections>
+                                    <action selector="attackButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Byf-HO-RY9"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcY-Z9-CFv" userLabel="missilePickUpButton">
                                 <rect key="frame" x="486" y="178" width="38" height="55"/>
@@ -60,6 +63,9 @@
                                     <constraint firstAttribute="width" constant="38" id="k3Z-zj-Rqh"/>
                                 </constraints>
                                 <state key="normal" image="missle"/>
+                                <connections>
+                                    <action selector="onMissilePickUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AKT-tC-xX2"/>
+                                </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="alien" translatesAutoresizingMaskIntoConstraints="NO" id="fCD-E6-NTZ">
                                 <rect key="frame" x="455" y="125" width="100" height="162"/>
@@ -75,6 +81,9 @@
                                     <constraint firstAttribute="height" constant="76" id="qxq-SE-CMm"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="launchmisslev2"/>
+                                <connections>
+                                    <action selector="onLanuchMissileButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDp-jL-Gvy"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Missile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-23-V9o" userLabel="missileInventoryLabel">
                                 <rect key="frame" x="125" y="539" width="134" height="74"/>
@@ -96,7 +105,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HI-D5-FFw" userLabel="printLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HI-D5-FFw" userLabel="printLabel">
                                 <rect key="frame" x="20" y="20" width="560" height="21"/>
                                 <fontDescription key="fontDescription" name="Vermin-Vibes-1989" family="Vermin Vibes 1989" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,6 +148,7 @@
                         <outlet property="launchMissileButton" destination="Nkw-Wd-FwX" id="qfu-Tu-QlI"/>
                         <outlet property="missileInventoryLabel" destination="Q51-23-V9o" id="3dW-WP-YJj"/>
                         <outlet property="missilePickUpButton" destination="lcY-Z9-CFv" id="m32-oN-H5S"/>
+                        <outlet property="printLabel" destination="0HI-D5-FFw" id="7fX-uP-5QZ"/>
                         <outlet property="spaceGroundImageView" destination="5OL-eQ-xRJ" id="wNS-fO-gfx"/>
                     </connections>
                 </viewController>
