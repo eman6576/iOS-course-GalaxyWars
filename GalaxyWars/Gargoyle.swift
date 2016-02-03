@@ -9,8 +9,6 @@
 import Foundation
 
 class Gargoyle: Enemy {
-    private var immuneMax = 20
-    
     override var type: String {
         return "Gargoyle"
     }
