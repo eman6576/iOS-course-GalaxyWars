@@ -9,6 +9,7 @@
         <mutableArray key="vermin_vibes_1989.ttf">
             <string>Vermin-Vibes-1989</string>
             <string>Vermin-Vibes-1989</string>
+            <string>Vermin-Vibes-1989</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -28,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="5OL-eQ-xRJ">
-                                <rect key="frame" x="-2" y="362" width="605" height="238"/>
+                                <rect key="frame" x="-500" y="362" width="1384" height="238"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jet" translatesAutoresizingMaskIntoConstraints="NO" id="K8D-aI-3Jg" userLabel="spaceShip">
                                 <rect key="frame" x="32" y="164" width="145" height="83"/>
@@ -95,6 +96,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HI-D5-FFw" userLabel="printLabel">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <fontDescription key="fontDescription" name="Vermin-Vibes-1989" family="Vermin Vibes 1989" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -109,8 +116,11 @@
                             <constraint firstItem="4Uy-5g-apk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KTH-fU-KBX"/>
                             <constraint firstItem="5OL-eQ-xRJ" firstAttribute="top" secondItem="K8D-aI-3Jg" secondAttribute="bottom" constant="115" id="Kb3-oF-vzm"/>
                             <constraint firstItem="5OL-eQ-xRJ" firstAttribute="top" secondItem="fCD-E6-NTZ" secondAttribute="bottom" constant="75" id="LNp-Zu-QId"/>
+                            <constraint firstItem="0HI-D5-FFw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Tac-Py-4Qs"/>
                             <constraint firstAttribute="trailing" secondItem="4Uy-5g-apk" secondAttribute="trailing" id="U3M-s4-LTN"/>
                             <constraint firstItem="OlJ-de-wf5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="VYd-Ce-WCF"/>
+                            <constraint firstItem="0HI-D5-FFw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eKm-FF-xzU"/>
+                            <constraint firstItem="0HI-D5-FFw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fCy-dP-scm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Uy-5g-apk" secondAttribute="bottom" id="fsn-rk-d1a"/>
                             <constraint firstItem="5OL-eQ-xRJ" firstAttribute="top" secondItem="lcY-Z9-CFv" secondAttribute="bottom" constant="129" id="iOt-5m-Eri"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5OL-eQ-xRJ" secondAttribute="bottom" id="mzP-ZY-fX5"/>
@@ -121,10 +131,20 @@
                             <constraint firstItem="5OL-eQ-xRJ" firstAttribute="top" secondItem="gvZ-mY-yOs" secondAttribute="bottom" constant="32" id="xLd-bG-C83"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alienImageView" destination="fCD-E6-NTZ" id="iwd-h0-bZx"/>
+                        <outlet property="attackButton" destination="OlJ-de-wf5" id="mgc-fN-Ixa"/>
+                        <outlet property="enemyHPLabel" destination="gvZ-mY-yOs" id="ppr-0N-1ku"/>
+                        <outlet property="gargoyleEnemyImageView" destination="QrI-zD-9et" id="Rj9-TJ-w10"/>
+                        <outlet property="launchMissileButton" destination="Nkw-Wd-FwX" id="qfu-Tu-QlI"/>
+                        <outlet property="missileInventoryLabel" destination="Q51-23-V9o" id="3dW-WP-YJj"/>
+                        <outlet property="missilePickUpButton" destination="lcY-Z9-CFv" id="m32-oN-H5S"/>
+                        <outlet property="spaceGroundImageView" destination="5OL-eQ-xRJ" id="wNS-fO-gfx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259" y="328"/>
+            <point key="canvasLocation" x="-419" y="311"/>
         </scene>
     </scenes>
     <resources>
