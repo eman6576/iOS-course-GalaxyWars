@@ -13,6 +13,7 @@
 		881FB1921C59D979001AD516 /* Alien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881FB1911C59D979001AD516 /* Alien.swift */; };
 		881FB1941C59DA4F001AD516 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881FB1931C59DA4F001AD516 /* Enemy.swift */; };
 		881FB1961C59E770001AD516 /* Gargoyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881FB1951C59E770001AD516 /* Gargoyle.swift */; };
+		88357D371C5B1E24008DD727 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88357D361C5B1E24008DD727 /* Animation.swift */; };
 		8854BA721C570A7D00C9FD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854BA711C570A7D00C9FD94 /* AppDelegate.swift */; };
 		8854BA741C570A7D00C9FD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854BA731C570A7D00C9FD94 /* ViewController.swift */; };
 		8854BA771C570A7D00C9FD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8854BA751C570A7D00C9FD94 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		881FB1911C59D979001AD516 /* Alien.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alien.swift; sourceTree = "<group>"; };
 		881FB1931C59DA4F001AD516 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		881FB1951C59E770001AD516 /* Gargoyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gargoyle.swift; sourceTree = "<group>"; };
+		88357D361C5B1E24008DD727 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		8854BA6E1C570A7D00C9FD94 /* GalaxyWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxyWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8854BA711C570A7D00C9FD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8854BA731C570A7D00C9FD94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				881FB1931C59DA4F001AD516 /* Enemy.swift */,
 				881FB1911C59D979001AD516 /* Alien.swift */,
 				881FB1951C59E770001AD516 /* Gargoyle.swift */,
+				88357D361C5B1E24008DD727 /* Animation.swift */,
 			);
 			path = GalaxyWars;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				881FB1901C59CB88001AD516 /* Player.swift in Sources */,
 				881FB18E1C59A24C001AD516 /* Character.swift in Sources */,
+				88357D371C5B1E24008DD727 /* Animation.swift in Sources */,
 				881FB1941C59DA4F001AD516 /* Enemy.swift in Sources */,
 				8854BA741C570A7D00C9FD94 /* ViewController.swift in Sources */,
 				881FB1921C59D979001AD516 /* Alien.swift in Sources */,
